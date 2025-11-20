@@ -103,10 +103,10 @@ Follow this order to build knowledge progressively:
 - [Set](https://github.com/me-ahnafnasim/Learn-Python/tree/main/2.explained-pre-build-function) | [Dictionary](https://github.com/me-ahnafnasim/Learn-Python/tree/main/2.explained-pre-build-function)  
 - [String](https://github.com/me-ahnafnasim/Learn-Python/tree/main/2.explained-pre-build-function)
 
-### Practice Code
+### Learn looping 
 - [Loops in DS](https://github.com/me-ahnafnasim/Learn-Python/tree/main/3.loop-in-buld-in-ds)
 
-### Exam Prep
+### Practice Code
 - [String Problems](https://github.com/me-ahnafnasim/Learn-Python/tree/main/5.exam-related-prob.py/string)
 - [List Comprehension](https://github.com/me-ahnafnasim/Learn-Python/tree/main/5.exam-related-prob.py/list)
 - [Dictionary Drills](https://github.com/me-ahnafnasim/Learn-Python/blob/main/5.exam-related-prob.py/dictionary/dict_prob.py)
@@ -131,6 +131,6 @@ You’re free to use, copy, and modify it for learning—but please credit the s
 ---
 
 *Happy Coding & Happy Learning!* 💻✨  
-*Last Updated: Friday, November 21, 2025*
+*Last Updated: Thursday, November 20, 2025*
 
 ---

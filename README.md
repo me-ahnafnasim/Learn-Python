@@ -94,25 +94,22 @@ Follow this order to build knowledge progressively:
 ## 📚 Quick Navigation
 
 ### Basics
-- [All Built-in Functions](1.basic/1.all-build-in-function.md)
-- [Function Comparisons](1.basic/2.built-in-function-comparison.md)
-- [Data Structure Features](1.basic/3.pre-build-ds-features.md)
+- [All Built-in Functions](https://github.com/me-ahnafnasim/Learn-Python/tree/main/1.basic)
+- [Function Comparisons](https://github.com/me-ahnafnasim/Learn-Python/tree/main/1.basic)
+- [Data Structure Features](https://github.com/me-ahnafnasim/Learn-Python/tree/main/1.basic)
 
 ### Data Structures Explained
-- [List](2.explained-pre-build-function/list.md) | [Tuple](2.explained-pre-build-function/tuple.md)  
-- [Set](2.explained-pre-build-function/set.md) | [Dictionary](2.explained-pre-build-function/dictionary.md)  
-- [String](2.explained-pre-build-function/string.md)
+- [List](https://github.com/me-ahnafnasim/Learn-Python/tree/main/2.explained-pre-build-function) | [Tuple](https://github.com/me-ahnafnasim/Learn-Python/tree/main/2.explained-pre-build-function)  
+- [Set](https://github.com/me-ahnafnasim/Learn-Python/tree/main/2.explained-pre-build-function) | [Dictionary](https://github.com/me-ahnafnasim/Learn-Python/tree/main/2.explained-pre-build-function)  
+- [String](https://github.com/me-ahnafnasim/Learn-Python/tree/main/2.explained-pre-build-function)
 
 ### Practice Code
-- [Loops in DS](3.loop-in-buld-in-ds/)
-- [User Input Example](4.some-important-things/userInput.py)
+- [Loops in DS](https://github.com/me-ahnafnasim/Learn-Python/tree/main/3.loop-in-buld-in-ds)
 
 ### Exam Prep
-- [String Problems](5.exam-related-prob.py/string/str_probs.py)
-- [List Comprehension](5.exam-related-prob.py/list/list_comprehension.py)
-- [Dictionary Drills](5.exam-related-prob.py/dictionary/dict_prob.py)
-- [MCQs](5.exam-related-prob.py/mcq/)
-
+- [String Problems](https://github.com/me-ahnafnasim/Learn-Python/tree/main/5.exam-related-prob.py/string)
+- [List Comprehension](https://github.com/me-ahnafnasim/Learn-Python/tree/main/5.exam-related-prob.py/list)
+- [Dictionary Drills](https://github.com/me-ahnafnasim/Learn-Python/blob/main/5.exam-related-prob.py/dictionary/dict_prob.py)
 ---
 
 ## 💬 Feedback & Contribution

@@ -185,11 +185,12 @@ print(result)
 li =[10, 10, 10, 10, 20, 20, 20, 20, 40, 40, 50, 50, 30]
 result ={}
 for n in li:
-    if n not in result:   
+    if n not in result:
         result[n] = 1
-    if n in result:
-        result[n] +=1
+    else:
+        result[n] += 1
 print(result)
+
 
 
 

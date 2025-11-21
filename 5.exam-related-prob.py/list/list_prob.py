@@ -156,14 +156,14 @@ for i in range(len(myli)):
     for j in range(i+1, len(myli)):
         if myli[i] > myli[j]:
             myli[i], myli[j] = myli[j], myli[i]
-print(myli)
+print(myli[-2])
 
 
 
 #12)Write a Python program to get unique values from a list.
 #dont maintain the orginal dictionary order
 my_list = [10, 20, 30, 40, 20, 50, 60, 40]
-print(set(my_list))
+print(list(set(my_list)))
 
 #maintain the orginal dictionary order
 result =[]

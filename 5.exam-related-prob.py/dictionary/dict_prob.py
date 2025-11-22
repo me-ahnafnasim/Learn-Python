@@ -130,13 +130,13 @@ print(max_key)
 # find key of a minimum value in a Dictionary
 d = {1: 10, 2: 20, 3: 30, 4: 40, 5: 50, 6: 60}
 
-max_value = None
-max_key = None
+min_value = None
+min_key = None
 for  key, value in d.items():
-    if max_value is None or value <max_value:
-        max_value = value
-        max_key = key
-print(max_key)
+    if min_value is None or value <min_value:
+        min_value = value
+        min_key = key
+print(min_key)
     
 
 

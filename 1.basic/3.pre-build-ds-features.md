@@ -1,0 +1,18 @@
+# Python Data Structures Comparison: List, Tuple, Set, Dictionary
+
+| Feature                | List                          | Tuple                         | Set                             | Dictionary (dict)                     |
+|------------------------|-------------------------------|-------------------------------|----------------------------------|----------------------------------------|
+| **Ordered**            | Yes                           | Yes                           | No (unordered)                   | Yes (as of Python 3.7+)                |
+| **Mutable**            | Yes                           | No                            | Yes                              | Yes (keys are immutable, values mutable) |
+| **Allows Duplicates**  | Yes                           | Yes                           | No                               | Keys: No, Values: Yes                  |
+| **Indexing**           | Yes (by index)                | Yes (by index)                | No                               | Yes (by key)                           |
+| **Syntax**             | `[1, 2, 3]`                   | `(1, 2, 3)`                   | `{1, 2, 3}`                      | `{'a': 1, 'b': 2}`                     |
+| **Use Case**           | Storing ordered, changeable data | Storing fixed data, faster access | Storing unique items, math operations | Storing key-value pairs               |
+| **Example**            | `fruits = ['apple', 'banana']`| `coords = (10, 20)`           | `unique_nums = {1, 2, 3}`        | `person = {'name': 'Alice', 'age': 25}`|
+| **Can Store Any Type** | Yes (heterogeneous)           | Yes (heterogeneous)           | Yes (heterogeneous, but hashable only) | Keys: immutable & hashable; Values: any type |
+| **Performance**        | Slower than tuple             | Faster (immutable)            | Fast for membership tests        | Fast lookups by key                    |
+
+## Notes:
+- **Set** elements must be **hashable** (e.g., numbers, strings, tuples — not lists or dicts).
+- **Dictionary** keys must be **immutable and hashable**, but values can be any type.
+- As of **Python 3.7+**, dictionaries maintain insertion order as part of the language specification.

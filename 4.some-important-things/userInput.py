@@ -2,7 +2,9 @@
 print("Enter your name:")
 name = input()
 print(type(name))
-#note: python input() function always return string"""
+#note: python input() function always return string
+#in Python, input() always returns a string by default, no matter what the user types.
+"""
 
 """#input integer number in python 
 age = int(input("enter your age: "))

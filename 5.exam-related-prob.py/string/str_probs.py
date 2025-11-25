@@ -30,6 +30,22 @@ for char in myString:
     result[char] = result.get(char, 0)+1
 print(result)
 
+# Learn how get() function work under the hood
+'''
+-get function take two argument, key, and default
+-in our case if key not found by default it add 0 as value
+-and after adding extra 1, it make a flace in the result
+as (a:1)
+-if key in the list, it takes the value and add 1
+that's why 1 increase from total count
+'''
+#dict.get(key, default)
+d = {'a': 5}
+print(d.get('a', 0)+1)   # a:1
+print(d.get('b', 0))     # a:0
+
+
+
 
 #2)Get string of first and last 2 chars.
 def cut_str(str):

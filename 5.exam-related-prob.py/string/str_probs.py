@@ -47,7 +47,7 @@ print(d.get('b', 0))     # a:0
 
 
 
-#2)Get string of first and last 2 chars.
+#2)Get a string's first and last 2 chars..
 def cut_str(str):
    if len(str)<2:
     return ""

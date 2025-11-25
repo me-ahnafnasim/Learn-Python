@@ -37,10 +37,6 @@ So you get: `"ELL"` ✅
 Negative slicing 
 ---
 
-Great question! 🎉 Let’s learn about **slicing with negative indexes** — still explained like you’re 5 (but a 5-year-old who’s ready for a **string adventure**! 🚀).
-
----
-
 ### 🍭 Imagine the string is a candy train 🚂
 
 Let’s use:  

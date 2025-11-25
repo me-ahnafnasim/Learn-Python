@@ -54,7 +54,7 @@ def cut_str(str):
    else:
     return str[0:2]+str[-2:]
 
-print(cut_str('w3resource'))
+print(cut_str('ahnafnasim'))
 
 
 

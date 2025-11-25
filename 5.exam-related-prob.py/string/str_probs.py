@@ -3,9 +3,11 @@
 #Convert String to List & Back
 s = "bangla"
 myList = list(s)
-str1 = s.split()
 con_string ="".join(myList)
 print(con_string)
+
+str1 = s.split() -split seperate each word from sentence, not letter from word
+con_string ="".join(myList)
 """
 
 

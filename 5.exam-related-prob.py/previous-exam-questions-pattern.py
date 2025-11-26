@@ -1,5 +1,16 @@
+
+#Write a program that takes the last item from a list and inserts it at the start."
+lst = [2,5,6,7,9]
+last_num = lst.pop()
+lst.insert(0, last_num)
+print(lst)
+
+
+
+'''
 Given a dictionary of fruits where each value is a list containing [price, quantity], calculate the total value (price × quantity) 
 for each fruit, and determine the maximum total value.
+'''
 
 fruits = {
     "apple": [1.20, 50],      

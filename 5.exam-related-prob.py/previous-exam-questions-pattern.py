@@ -1,3 +1,28 @@
+Given a dictionary of fruits where each value is a list containing [price, quantity], calculate the total value (price × quantity) 
+for each fruit, and determine the maximum total value.
+
+fruits = {
+    "apple": [1.20, 50],      
+    "banana": [0.50, 100],
+    "orange": [0.80, 75],
+    "mango": [2.00, 30],
+    "grape": [3.50, 20]
+}
+result =[]
+max_price = None
+for value in fruits.values():
+    total =1
+    for item in value:
+        total *= item
+    result.append(total)
+for value in result:
+    if max_price is None or value > max_price:
+        max_price = value
+print(result, max_price)
+
+
+
+
 """
 Write a Python function group_words(words) that takes a list of strings words and returns a dictionary where:
 The keys are the first letters of the words (lowercase).

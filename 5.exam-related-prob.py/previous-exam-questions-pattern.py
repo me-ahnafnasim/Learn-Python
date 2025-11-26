@@ -281,3 +281,290 @@ example-- ["a":[10, 30, 56], "b":[11, 38, 57], "c":[1,2,5, 34]]
 3.
 4.
 """
+
+
+
+
+
+
+
+
+
+#Write the Python function onlyodd(xlist), xlist being a 
+# list of 10 integers in the range (1,20),
+#  that returns a list containing only the odd
+#  numbers contained in the list xlist.
+def onlyodd(xlist):
+    return [x for x in xlist if x%2 != 0]
+#or
+def onlyodd(xlist):
+    result =[]
+    for num in xlist:
+        if num % 2 != 0:
+            result.append(num)
+    return result
+print(onlyodd([1,2,3,4,5,6,7,8,9,10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]))
+
+    
+
+
+
+#Write a function digit_sum(n) that e 
+# recursively returns the sum of the digits
+#  of an integer n.
+
+def sumdigit(n):
+    num = abs(n)
+    if num <10:
+        return num
+    else:
+        return (n%10) + sumdigit(n//10)
+print(sumdigit(1239))
+
+
+
+
+
+
+#Write the Python function a11 unique that returns True
+# if all elements in a list are unique, False otherwise.
+
+def unique(xlist):
+    if len(set(xlist)) == len(xlist):
+        return True
+    else:
+        return False
+print(unique([1,2,3,4,5,6]))
+
+
+
+
+
+'''
+xlist = [[1, 7, 12], [4, 2, 10, 14], [15, 3, 2, 11, 20]]
+Implement the Python function ds_oddmax(xlist) 
+that returns a list containing the maximum elements contained
+ in the inner lists having an odd number of elements.
+
+ -jei inner list gula odd number of element contain korte ce tader max number niye
+ ekta list return korte hobe.
+'''
+
+
+
+def oddmax(xlist):
+    result = []
+    for inner_list in xlist:
+        if len(inner_list) % 2 == 1:  # Check if the number of elements is odd
+            result.append(max(inner_list))
+    return result
+xlist = [[1, 7, 12], [4, 2, 10, 14], [15, 3, 2, 11, 20]]
+print(oddmax(xlist))
+
+
+
+
+'''
+return a new list which contain odd max number from the sublist
+'''
+def ds_oddmax(xlist):
+    result = []
+    for inner_list in xlist:
+        odd_numbers = [x for x in inner_list if x % 2 == 1]
+        if odd_numbers:  # non-empty → at least one odd number
+            result.append(max(odd_numbers))
+    return result
+#or
+def ds_oddmax(xlist):
+    result = []
+    for inner_list in xlist:
+        odd_list= [x for x in inner_list if x % 2 == 1]
+        if len(odd_list)>0:  # non-empty → at least one odd number
+            result.append(max(odd_list))
+    return result
+xlist = [[1, 7, 12], [4, 2, 10, 14], [15, 3, 2, 11, 20]]
+print(ds_oddmax(xlist))
+
+
+
+
+"""
+Write a Python function that calculates the discounted price given
+ an original price and a discount percentage, and returns the result 
+ rounded to two decimal places. 
+"""
+def apply_discount(price, dicount_percentage):
+    discountPrice = price - (price * dicount_percentage/100 )
+    discountPriceRound = round(discountPrice, 2)
+    return discountPriceRound
+
+price = 75.50
+di_per = 15
+print(apply_discount(price, di_per))
+
+
+
+
+
+
+"""
+"Write a Python program that asks the user for a string and prints it in all uppercase letters." 
+This 
+"""
+
+userInput = str(input('enter a string: '))
+print(userInput.upper())
+
+
+
+
+
+
+
+"""
+Write a program that asks the user for a sentence
+and prints the sentence in reverse order.
+"""
+me ='me ahnaf nasim from bangladesh'
+split = me.split()[::-1]
+result = ' '.join(split)
+print(result)
+
+
+#reverse a word word
+me ='ahnaf'
+print(me[::-1])
+
+
+
+
+
+
+'''
+Write a Python function called alternate_case(s) that takes a string 
+s and returns a new string where the characters alternate between 
+uppercase and lowercase, starting with uppercase at index 0. 
+'''
+def alternate_case(s):
+    result = []
+    for i, char in enumerate(s):
+        if i % 2 == 0:  # Even index (0, 2, 4...) → uppercase
+            result.append(char.upper())
+        else:           # Odd index (1, 3, 5...) → lowercase
+            result.append(char.lower())
+    return ''.join(result)
+
+
+
+
+
+"""
+write a Python function called count_tuples(tuples) that takes
+ a tuple as input and returns a dictionary where: 
+
+Each unique element in the tuple is a key, and
+The corresponding value is the number of times that element appears
+ in the tuple.
+"""
+
+def count_tuples(tuples):
+    count_dict = {}
+    for element in tuples:
+        if element in count_dict:
+            count_dict[element] += 1
+        else:
+            count_dict[element] = 1
+    return count_dict
+result = count_tuples(('a', 'b', 'a', 'c', 'b', 'a'))
+print(result)  # Output: {'a': 3, 'b': 2, 'c': 1}
+
+
+
+
+
+'''
+Write a Python function called tuples_to_dict(tuples) that takes a 
+list of tuples as input and returns a dictionary.
+
+-The first element of each tuple becomes a key in the dictionary.
+-The second element of each tuple becomes the corresponding value.
+'''
+
+def tuples_to_dict(tuples):
+    result = {}
+    for key, value in tuples:
+        result[key] = value
+    return result
+
+# Example 1
+print(tuples_to_dict([('a', 1), ('b', 2)]))
+# Output: {'a': 1, 'b': 2}
+
+# Example 2
+print(tuples_to_dict([('name', 'Alice'), ('age', 30), ('city', 'NYC')]))
+# Output: {'name': 'Alice', 'age': 30, 'city': 'NYC'}
+
+
+
+
+
+
+'''
+Write a Python function called factorial(n) that takes a non-negative
+integer n and returns its factorial
+'''
+
+def factorial(n):
+    if n == 0:
+        return 1
+    return n * factorial(n - 1)
+
+
+
+def factorial(n):
+    if n == 0:
+        return 1
+    result = 1
+    for i in range(1, n + 1):
+        result *= i
+    return result
+
+
+
+
+
+'''
+Write a Python function called count_vowels(s) that returns the 
+number of vowels in the string s. 
+'''
+
+def count_vowels(s):
+    vowels = "aeiouAEIOU"
+    count = 0
+    for char in s:
+        if char in vowels:
+            count += 1
+    return count
+
+
+
+
+
+
+
+
+'''
+Write a Python function called count_case(s) that takes a string s 
+and returns a tuple (uppercase_count, lowercase_count)
+ — the number of uppercase letters and lowercase letters in the string. 
+'''
+
+def count_case(s):
+    upper_count = 0
+    lower_count = 0
+    for char in s:
+        if char.isupper():
+            upper_count += 1
+        elif char.islower():
+            lower_count += 1
+    return (upper_count, lower_count)

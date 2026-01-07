@@ -86,6 +86,7 @@ Follow this order to build knowledge progressively:
 2. Clone or download this folder.
 3. Open any `.py` file in a code editor or run it directly
 4. For markdown files (`.md`), just read them in any text editor or on GitHub.
+5. if you clone the repo in your local machine click ctrl+shift+v altogather for opening md a fille.
 
 > ✅ **Pro Tip**: Don’t just read—**edit the code**, break it, fix it, and add your own examples!
 

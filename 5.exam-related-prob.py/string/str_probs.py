@@ -35,9 +35,11 @@ print(result)
 
 # Learn how get() function work under the hood
 '''
+get(key, default)
+
 -get function take two argument, key, and default
 -in our case if key not found by default it add 0 as value
--and after adding extra 1, it make a flace in the result
+-and after adding extra 1, it make a place in the result
 as (a:1)
 -if key in the list, it takes the value and add 1
 that's why 1 increase from total count

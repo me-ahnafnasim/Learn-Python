@@ -1,19 +1,21 @@
 """
 --basic
 #Convert String to List & Back
+"""
 s = "bangla"
 myList = list(s)
 con_string ="".join(myList)
 print(con_string)
 
-str1 = s.split() -split seperate each word from sentence, not letter from word
+str1 = s.split() #split seperate each word from sentence, not letter from word
 con_string ="".join(myList)
-"""
+
 
 
 #1)
 """Write a Python program to count the frequency of each character in a 
-string using a dictionary.
+string using a dictionary."""
+
 myString = 'google.com'
 result ={}
 for item in myString:
@@ -21,7 +23,7 @@ for item in myString:
         result[item] += 1
     else:
         result[item] = 1
-print(result)"""
+print(result)
 
 #or,
 myString = 'google.com'
@@ -133,8 +135,6 @@ def odd_value_string(mystr):
 
 
 
-
-
 #7) Swap first and last chars of a string.
 
 myStr ="abcd"
@@ -151,7 +151,6 @@ print(change_string('abcd'))
 
 result ="bangladesh"
 print(result[0]+result[1])
-
 
 
 
@@ -453,10 +452,7 @@ print(pangram("The quick brown Fox jumps over the lazy do"))
 
 
 
-
-
 #22)Check Anagrams
-
 def are_anagrams(str1, str2):
     # Remove spaces and convert to lowercase
     cleaned1 = str1.replace(" ", "").lower()
@@ -485,8 +481,6 @@ def palindrome(word):
 print(palindrome("Racecar"))
 
 
-
-
 #24)Count Vowels and Consonants
 s ="python"
 vowels ="aeiou"
@@ -498,9 +492,6 @@ for char in s:
     else:
         const_count +=1
 print(vowels_count, const_count)
-
-
-
 
 
 #25)Capitalize First Letter of Each Word
@@ -521,9 +512,7 @@ print(result)
 
 
 
-
 #27) find first non repeating character; if not fount return None
-
 def find_first_non_repeating_char(str1):
     result ={}
     for char in str1:
@@ -534,9 +523,6 @@ def find_first_non_repeating_char(str1):
     return None
 
 print(find_first_non_repeating_char("aabbcc"))
-
-
-
 
 
 

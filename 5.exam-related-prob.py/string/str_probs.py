@@ -7,7 +7,7 @@ myList = list(s)
 con_string ="".join(myList)
 print(con_string)
 
-#Note: split-seperate each word from sentence, not letter from word
+#Note: split-seperate each word from sentence and make a list, not letter from word
 str1 = s.split() 
 
 
